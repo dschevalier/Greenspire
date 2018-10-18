@@ -1,0 +1,53 @@
+#top-nav {
+    padding: 3rem 0 .5rem 0;
+
+    .navbar-brand {
+        color: $observatory;
+        font-weight: 700;
+        font-family: $font-serif;
+        font-size: 3rem;
+        letter-spacing: -2px;
+        padding-right: 2rem;
+
+        &.active,
+        &:hover {
+            color: $observatory;
+            transition: all .2s linear;
+        }
+    }
+
+    .navbar-brand i {
+        font-size: 3rem;
+        margin-right: .5rem;
+    }
+
+    .navbar-toggler {
+        font-size: 2.5rem;
+        margin-top: 3px;
+        color: $observatory;
+
+        &.active,
+        &:hover {
+            transition: all .2s linear;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                font-size: 1.6rem;
+                font-family: $font-sans;
+                font-weight: 400;
+                padding: 0 1rem;
+                margin-top: .8rem;
+                color: $dusty-gray;
+
+                &.active,
+                &:hover {
+                    color: $observatory;
+                    transition: all .2s linear;
+                }
+            }
+        }
+    }
+}

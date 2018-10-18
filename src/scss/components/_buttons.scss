@@ -1,0 +1,43 @@
+@mixin button {
+    font-family: $font-sans;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 1.7rem;
+    border-radius: 1rem;
+    padding: 1.2rem 2rem;
+    margin: 1.5rem 2rem 0 0;
+}
+
+.btn {
+    &-solid {
+        @include button;
+        background-color: $observatory;
+        border: 0 solid none;
+        color: $alabaster;
+
+        &:hover {
+            background-color: lighten($observatory, 5%);
+            color: $alabaster;
+            transition: background-color .3s linear;
+        }
+    }
+
+    &-outline {
+        @include button;
+        background-color: none;
+        border: 1px solid $tundora;
+        color: $tundora;
+
+        &:hover {
+            background-color: darken($gin, 8%);
+            color: $tundora;
+            transition: all .3s linear;
+        }
+    }
+}
+
+.popover {
+    font-size: 1.3rem;
+    font-family: $font-sans;
+    text-align: center;
+}

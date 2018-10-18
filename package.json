@@ -1,0 +1,25 @@
+{
+  "name": "Greenspire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass src/scss/styles.scss src/css/styles.css -w",
+    "server": "live-server --open=src/",
+    "working": "npm-run-all --parallel server watch",
+    "compile": "node-sass src/scss/styles.scss src/css/styles.compile.css",
+    "concat": "concat -o src/css/styles.concat.css src/css/styles.compile.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' src/css/styles.concat.css -o src/css/styles.prefix.css",
+    "compress": "node-sass src/css/styles.prefix.css src/css/styles.css --output-style compressed",
+    "build": "npm-run-all compile concat prefix compress"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.2.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.4",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0"
+  }
+}
