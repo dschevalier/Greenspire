@@ -2,36 +2,85 @@ header.hero {
     text-align: left;
     background-color: $gin;
     border-radius: 1rem;
-    padding: 10rem 0 7rem 0;
+    padding: 7rem 4rem;
+    text-align: center;
+
+    @include respond(md) {
+        text-align: left;
+        padding: 12rem 0 7rem 0;
+    }
+
+    @include respond(xl) {
+        padding: 10rem 0 7rem 0;
+    }
 
     .hero-textbox {
-        padding-bottom: 15rem;
+        padding-bottom: 5rem;
+
+        @include respond(lg) {
+            padding-bottom: 8rem;
+        }
+
+        @include respond(xl) {
+            padding-bottom: 12rem;
+        }
 
         .hero-heading {
             font-family: $font-serif;
             color: $tundora;
             font-weight: 700;
-            font-size: 3.6rem;
-            line-height: 4rem;
+            font-size: 2.4rem;
+            line-height: 2rem;
+
+            @include respond(lg) {
+                font-size: 3rem;
+                line-height: 4rem;
+            }
+
+            @include respond(xl) {
+                font-size: 3.6rem;
+            }
         }
 
         .hero-lead {
-            font-size: 2rem;
+            font-size: 1.6rem;
             line-height: 2.2rem;
             font-weight: 400;
             font-family: $font-sans;
             color: $tundora;
             padding: 1.5rem 0 1rem 0;
 
+            @include respond(lg) {
+                font-size: 2rem;
+                font-size: 1.8rem;
+            }
         }
     }
 
     img {
         width: auto;
         margin-bottom: -7rem;
-        margin-left: -4rem;
-        display: inline-block;
-        height: 50rem;
+        text-align: center;
+        height: 25rem;
+        // margin-left: -3rem;
+
+        @include respond(md) {
+            // height: 30rem;
+            // margin-left: -5rem;
+        }
+
+        @include respond(lg) {
+            height: 35rem;
+            margin-left: -4rem;
+        }
+
+        @include respond(xl) {
+            height: 40rem;
+        }
+
+        @include respond(xl-plus) {
+            height: 50rem;
+        }
+
     }
 }
-

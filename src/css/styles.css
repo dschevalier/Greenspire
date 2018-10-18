@@ -9995,7 +9995,10 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  padding: 0 3rem; }
+  padding: 0 1rem; }
+  @media only screen and (min-width: 75em) {
+    body {
+      padding: 0 2rem; } }
 
 ::selection {
   background: #E9F3ED;
@@ -10020,17 +10023,30 @@ p {
   color: #979797;
   font-size: 1.9rem; }
 
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none; }
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none; }
+
 .btn-solid {
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
-  padding: 1.2rem 2rem;
-  margin: 1.5rem 2rem 0 0;
+  padding: 1rem 1.6rem;
+  margin: .5rem .2rem;
   background-color: #009068;
   border: 0 solid none;
   color: #FAFAFA; }
+  @media only screen and (min-width: 62em) {
+    .btn-solid {
+      padding: 1.2rem 2rem;
+      font-size: 1.7rem;
+      margin: 1.5rem 2rem 0 0; } }
   .btn-solid:hover {
     background-color: #00aa7a;
     color: #FAFAFA;
@@ -10040,13 +10056,18 @@ p {
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
-  padding: 1.2rem 2rem;
-  margin: 1.5rem 2rem 0 0;
+  padding: 1rem 1.6rem;
+  margin: .5rem .2rem;
   background-color: none;
   border: 1px solid #454545;
   color: #454545; }
+  @media only screen and (min-width: 62em) {
+    .btn-outline {
+      padding: 1.2rem 2rem;
+      font-size: 1.7rem;
+      margin: 1.5rem 2rem 0 0; } }
   .btn-outline:hover {
     background-color: #cfe5d7;
     color: #454545;
@@ -10061,57 +10082,109 @@ header.hero {
   text-align: left;
   background-color: #E9F3ED;
   border-radius: 1rem;
-  padding: 10rem 0 7rem 0; }
+  padding: 7rem 4rem;
+  text-align: center; }
+  @media only screen and (min-width: 48em) {
+    header.hero {
+      text-align: left;
+      padding: 12rem 0 7rem 0; } }
+  @media only screen and (min-width: 75em) {
+    header.hero {
+      padding: 10rem 0 7rem 0; } }
   header.hero .hero-textbox {
-    padding-bottom: 15rem; }
+    padding-bottom: 5rem; }
+    @media only screen and (min-width: 62em) {
+      header.hero .hero-textbox {
+        padding-bottom: 8rem; } }
+    @media only screen and (min-width: 75em) {
+      header.hero .hero-textbox {
+        padding-bottom: 12rem; } }
     header.hero .hero-textbox .hero-heading {
       font-family: "PT Serif", serif;
       color: #454545;
       font-weight: 700;
-      font-size: 3.6rem;
-      line-height: 4rem; }
+      font-size: 2.4rem;
+      line-height: 2rem; }
+      @media only screen and (min-width: 62em) {
+        header.hero .hero-textbox .hero-heading {
+          font-size: 3rem;
+          line-height: 4rem; } }
+      @media only screen and (min-width: 75em) {
+        header.hero .hero-textbox .hero-heading {
+          font-size: 3.6rem; } }
     header.hero .hero-textbox .hero-lead {
-      font-size: 2rem;
+      font-size: 1.6rem;
       line-height: 2.2rem;
       font-weight: 400;
       font-family: "Nunito Sans", sans-serif;
       color: #454545;
       padding: 1.5rem 0 1rem 0; }
+      @media only screen and (min-width: 62em) {
+        header.hero .hero-textbox .hero-lead {
+          font-size: 2rem;
+          font-size: 1.8rem; } }
   header.hero img {
     width: auto;
     margin-bottom: -7rem;
-    margin-left: -4rem;
-    display: inline-block;
-    height: 50rem; }
+    text-align: center;
+    height: 25rem; }
+    @media only screen and (min-width: 62em) {
+      header.hero img {
+        height: 35rem;
+        margin-left: -4rem; } }
+    @media only screen and (min-width: 75em) {
+      header.hero img {
+        height: 40rem; } }
+    @media only screen and (min-width: 120em) {
+      header.hero img {
+        height: 50rem; } }
 
 #top-nav {
-  padding: 3rem 0 .5rem 0; }
+  padding: 1rem 0 .5rem 0; }
+  @media only screen and (min-width: 62em) {
+    #top-nav {
+      padding: 3rem 0 .5rem 0; } }
   #top-nav .navbar-brand {
     color: #009068;
     font-weight: 700;
     font-family: "PT Serif", serif;
-    font-size: 3rem;
+    font-size: 2.4rem;
     letter-spacing: -2px;
-    padding-right: 2rem; }
+    padding-right: 1rem; }
+    @media only screen and (min-width: 62em) {
+      #top-nav .navbar-brand {
+        font-size: 2.7rem; } }
+    @media only screen and (min-width: 75em) {
+      #top-nav .navbar-brand {
+        font-size: 3.2rem; } }
     #top-nav .navbar-brand.active, #top-nav .navbar-brand:hover {
       color: #009068;
       transition: all .2s linear; }
   #top-nav .navbar-brand i {
-    font-size: 3rem;
+    font-size: 2.4rem;
     margin-right: .5rem; }
+    @media only screen and (min-width: 62em) {
+      #top-nav .navbar-brand i {
+        font-size: 2.7rem; } }
+    @media only screen and (min-width: 75em) {
+      #top-nav .navbar-brand i {
+        font-size: 3.2rem; } }
   #top-nav .navbar-toggler {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-top: 3px;
     color: #009068; }
     #top-nav .navbar-toggler.active, #top-nav .navbar-toggler:hover {
       transition: all .2s linear; }
   #top-nav .navbar-nav .nav-item .nav-link {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     padding: 0 1rem;
     margin-top: .8rem;
     color: #979797; }
+    @media only screen and (min-width: 62em) {
+      #top-nav .navbar-nav .nav-item .nav-link {
+        font-size: 1.8rem; } }
     #top-nav .navbar-nav .nav-item .nav-link.active, #top-nav .navbar-nav .nav-item .nav-link:hover {
       color: #009068;
       transition: all .2s linear; }

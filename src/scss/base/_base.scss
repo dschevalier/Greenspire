@@ -15,7 +15,10 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    padding: 0 3rem;
+    padding: 0 1rem;
+    @include respond(xl) {
+        padding: 0 2rem;
+    }
 }
 
 // SELECTION HIGHLIGHTS
