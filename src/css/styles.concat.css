@@ -9989,6 +9989,9 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   height: 100%;
   font-size: 62.5%; }
+  @media only screen and (min-width: 120em) {
+    html {
+      font-size: 65%; } }
 
 body {
   overflow-x: hidden;
@@ -10019,6 +10022,15 @@ h2 {
     h2 {
       font-size: 2.4rem; } }
 
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  color: #979797;
+  font-weight: 400; }
+  @media only screen and (min-width: 62em) {
+    h3 {
+      font-size: 1.8rem; } }
+
 p {
   line-height: 1.6;
   font-family: "Nunito Sans", sans-serif;
@@ -10027,6 +10039,17 @@ p {
   @media only screen and (min-width: 62em) {
     p {
       font-size: 1.8rem; } }
+
+a {
+  color: #454545; }
+  a:hover {
+    color: #979797;
+    transition: all .3s linear;
+    text-decoration: none; }
+
+hr {
+  max-width: 80%;
+  color: #979797; }
 
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: none !important;
@@ -10091,6 +10114,21 @@ p {
   margin-top: 4rem; }
   .hover-card img {
     margin-bottom: 2rem; }
+
+.social-buttons {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: .5rem;
+  margin-left: .5rem; }
+  .social-buttons li {
+    display: inline;
+    color: #979797;
+    font-size: 3rem;
+    margin-right: 2rem; }
+    .social-buttons li:hover {
+      color: #009068;
+      cursor: pointer;
+      transition: all .5s ease-in-out; }
 
 header.hero {
   background-color: #E9F3ED;
@@ -10167,7 +10205,7 @@ header.hero {
   margin: 0 1rem; }
   @media only screen and (min-width: 62em) {
     #top-nav {
-      padding: 1.5rem 0 .5rem 0; } }
+      padding: 1.5rem 0 0 0; } }
   #top-nav .navbar-brand {
     color: #009068;
     font-weight: 700;
@@ -10208,14 +10246,14 @@ header.hero {
     color: #979797; }
     #top-nav .navbar-nav .nav-item .nav-link.active, #top-nav .navbar-nav .nav-item .nav-link:hover {
       color: #009068;
-      transition: all .2s linear; }
+      transition: all .3s linear; }
 
 #section-one {
   padding: 1rem 0 3rem 0;
   text-align: center; }
   @media only screen and (min-width: 75em) {
     #section-one {
-      padding: 10rem 0;
+      padding: 7rem 0;
       text-align: left; } }
   #section-one img {
     padding: 3rem 0; }
@@ -10228,13 +10266,13 @@ header.hero {
   background-color: #FAFAFA;
   border-top: 1px solid #DEDEDE;
   border-bottom: 1px solid #DEDEDE;
-  padding: 5rem 0; }
+  padding: 4rem 0 5rem; }
   @media only screen and (min-width: 75em) {
     #section-two {
-      padding: 10rem 0; } }
+      padding: 7rem 0; } }
 
 #section-three {
-  padding: 5rem 0; }
+  padding: 4rem 0; }
   #section-three img {
     margin: 3rem 0 5rem 0; }
   @media only screen and (min-width: 75em) {
@@ -10242,3 +10280,41 @@ header.hero {
       padding: 10rem 0; }
       #section-three img {
         margin: 0; } }
+
+#section-four {
+  padding: 4rem 0; }
+  #section-four img {
+    margin: 0 0 5rem 0; }
+  @media only screen and (min-width: 75em) {
+    #section-four {
+      padding: 10rem 0; }
+      #section-four img {
+        margin: 0; } }
+
+footer {
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+  background-color: #FAFAFA;
+  border-top: 1px solid #DEDEDE; }
+  @media only screen and (min-width: 48em) {
+    footer {
+      text-align: left;
+      padding: 5rem 0 3rem 0; } }
+  @media only screen and (min-width: 75em) {
+    footer {
+      padding: 7rem 0;
+      text-align: left; } }
+  footer h2:nth-child(1) {
+    margin: 5rem 0 0 0; }
+    @media only screen and (min-width: 48em) {
+      footer h2:nth-child(1) {
+        margin: .5rem 0 0 0; } }
+  footer img {
+    padding: 3rem 0; }
+    @media only screen and (min-width: 48em) {
+      footer img {
+        float: left;
+        padding: 1rem 2rem; } }
+    @media only screen and (min-width: 75em) {
+      footer img {
+        padding: 1rem 5rem; } }

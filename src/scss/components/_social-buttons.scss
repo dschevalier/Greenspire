@@ -1,0 +1,17 @@
+.social-buttons {
+   list-style-type: none;
+   display: inline-block;
+   margin-top: .5rem;
+   margin-left: .5rem;
+   li {
+    display: inline;
+    color: $dusty-gray;
+    font-size: 3rem;
+    margin-right: 2rem;
+    &:hover {
+        color: $observatory;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+    }
+   }
+}
