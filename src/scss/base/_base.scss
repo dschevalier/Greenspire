@@ -7,7 +7,7 @@
 
 html {
     height: 100%;
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
 body {
@@ -15,10 +15,11 @@ body {
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    padding: 0 1rem;
-    @include respond(xl) {
-        padding: 0 2rem;
-    }
+    
+}
+
+.container {
+    max-width: 1300px;
 }
 
 // SELECTION HIGHLIGHTS

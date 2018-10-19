@@ -1,7 +1,9 @@
 #top-nav {
     padding: 1rem 0 .5rem 0;
+    @include small-side-margin;
+
     @include respond(lg) {
-        padding: 3rem 0 .5rem 0;
+        padding: 1.5rem 0 .5rem 0;
     }
 
     .navbar-brand {
@@ -17,7 +19,7 @@
         }
 
         @include respond(xl) {
-            font-size: 3.2rem;
+            font-size: 3.6rem;
         }
 
         &.active,
@@ -60,10 +62,6 @@
                 padding: 0 1rem;
                 margin-top: .8rem;
                 color: $dusty-gray;
-
-                @include respond(lg) {
-                    font-size: 1.8rem;
-                }
 
                 &.active,
                 &:hover {

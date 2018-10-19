@@ -1,7 +1,41 @@
 #section-one {
-    padding: 7rem 0;
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+
+    @include respond(xl) {
+        padding: 10rem 0;
+        text-align: left;
+    }
+
     img {
-        // float: right;
-        // padding: 0 2rem;
+        padding: 3rem 0;
+
+        @include respond(xl) {
+            padding: 2rem 5rem;
+            float: left;
+        }
+    }
+}
+
+#section-two {
+    background-color: $alabaster;
+    border-top: 1px solid $alto;
+    border-bottom: 1px solid $alto;
+    padding: 5rem 0;
+    @include respond(xl) {
+        padding: 10rem 0;
+    }
+}
+
+#section-three {
+    padding: 5rem 0;
+    img {
+        margin: 3rem 0 5rem 0;
+    }
+    @include respond(xl) {
+        padding: 10rem 0;
+        img {
+            margin: 0;
+        }
     }
 }
