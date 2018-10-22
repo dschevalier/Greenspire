@@ -1,9 +1,13 @@
 .hover-card {
     border: 1px solid $alto;
     background-color: $gin;
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    @include respond(lg) {
+        margin-top: 4rem;
+        padding: 3rem;
+    }
     img {
         margin-bottom: 2rem;
     }
