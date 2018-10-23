@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "node-sass src/scss/styles.scss src/css/styles.css -w",
-    "server": "live-server --open=src/",
+    "server": "live-server",
     "working": "npm-run-all --parallel server watch",
     "compile": "node-sass src/scss/styles.scss src/css/styles.compile.css",
     "concat": "concat -o src/css/styles.concat.css src/css/styles.compile.css",
