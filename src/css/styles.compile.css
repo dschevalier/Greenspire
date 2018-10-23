@@ -10345,7 +10345,7 @@ header.hero {
   padding: 4rem 0 5rem; }
   @media only screen and (min-width: 75em) {
     #section-two {
-      padding: 7rem 0; } }
+      padding: 7rem 0 9rem 0; } }
 
 #section-three {
   padding: 4rem 0; }
