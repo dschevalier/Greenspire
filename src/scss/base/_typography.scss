@@ -14,6 +14,8 @@ h3 {
     font-size: 1.6rem;
     color: $dusty-gray;
     font-weight: 400;
+    display: inline-block;
+    margin-top: .5rem;
 
     @include respond(lg) {
         font-size: 1.8rem;

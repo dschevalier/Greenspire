@@ -1,18 +1,48 @@
-// .accordion .card-header:after {
-//     font-family: "Font Awesome 5 Free";
-//     content: "\f151";
-//     float: right;
-//     font-style: normal;
-//     font-variant: normal;
-//     text-rendering: auto;
-//     -webkit-font-smoothing: antialiased;
-// }
+.accordion {
 
-// .accordion .card-header.collapsed:after {
-//     /* symbol for "collapsed" panels */
-//     content: "\f150";
-// }
+    .card-header {
+        background-color: $gin;
+        border: 1px solid $alto;
+        border-radius: 1rem;
+        padding: 1rem;
 
+        @include respond(sm) {
+            padding: 1.5rem;
+        }
+    }
 
+    .card-header:after {
+        @include respond(sm) {
+            font-family: "Font Awesome 5 Free";
+            content: "\f151";
+            float: right;
+            font-style: normal;
+            font-size: 2rem;
+            color: $observatory;
+            font-variant: normal;
+            text-rendering: auto;
+        }
+    }
 
+    .card-header.collapsed:after {
+        @include respond(sm) {
+            /* symbol for "collapsed" panels */
+            content: "\f150";
+            color: $dusty-gray;
+        }
+    }
 
+    .card:not(:first-of-type) .card-header:first-child {
+        border-radius: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem 1rem 0 1.4rem;
+    }
+
+    .card {
+        cursor: pointer;
+        border: 0;
+        margin: 2rem 0;
+    }
+}
