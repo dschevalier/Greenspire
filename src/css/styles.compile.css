@@ -10139,22 +10139,25 @@ hr {
     .accordion .card-header {
       padding: 1.5rem; } }
 
-@media only screen and (min-width: 36em) {
-  .accordion .card-header:after {
-    font-family: "Font Awesome 5 Free";
-    content: "\f151";
-    float: right;
-    font-style: normal;
-    font-size: 2rem;
-    color: #009068;
-    font-variant: normal;
-    text-rendering: auto; } }
+.accordion .card-header:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f146";
+  float: right;
+  font-style: normal;
+  margin-top: .3rem;
+  font-size: 1.5rem;
+  color: #009068;
+  font-variant: normal;
+  text-rendering: auto; }
+  @media only screen and (min-width: 36em) {
+    .accordion .card-header:after {
+      font-size: 2rem;
+      margin-top: 0; } }
 
-@media only screen and (min-width: 36em) {
-  .accordion .card-header.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "\f150";
-    color: #979797; } }
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f0fe";
+  color: #979797; }
 
 .accordion .card:not(:first-of-type) .card-header:first-child {
   border-radius: 1rem; }
@@ -10325,24 +10328,31 @@ header.hero {
       transition: all .3s linear; }
 
 #section-one {
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0 4rem 0;
   text-align: center; }
   @media only screen and (min-width: 75em) {
     #section-one {
       padding: 7rem 0;
       text-align: left; } }
   #section-one img {
-    padding: 3rem 0; }
+    padding: 3rem 0;
+    width: 6rem;
+    height: auto; }
     @media only screen and (min-width: 75em) {
       #section-one img {
         padding: 2rem 5rem;
-        float: left; } }
+        float: left;
+        width: 16rem;
+        height: auto; } }
 
 #section-two {
   background-color: #FAFAFA;
   border-top: 1px solid #DEDEDE;
   border-bottom: 1px solid #DEDEDE;
   padding: 4rem 0 5rem; }
+  #section-two img {
+    width: 6rem;
+    height: auto; }
   @media only screen and (min-width: 75em) {
     #section-two {
       padding: 7rem 0 9rem 0; } }
@@ -10386,11 +10396,14 @@ footer {
       footer h2:nth-child(1) {
         margin: .5rem 0 0 0; } }
   footer img {
-    padding: 3rem 0; }
+    padding: 3rem 0;
+    width: 10rem;
+    height: auto; }
     @media only screen and (min-width: 48em) {
       footer img {
         float: left;
         padding: 1rem 2rem; } }
     @media only screen and (min-width: 75em) {
       footer img {
-        padding: 1rem 5rem; } }
+        padding: 1rem 5rem;
+        width: 16rem; } }

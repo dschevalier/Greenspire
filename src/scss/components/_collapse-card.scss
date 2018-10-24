@@ -13,7 +13,7 @@
 
     .card-header:after {
         font-family: "Font Awesome 5 Free";
-        content: "\f151";
+        content: "\f146";
         float: right;
         font-style: normal;
         margin-top: .3rem;
@@ -30,7 +30,7 @@
 
     .card-header.collapsed:after {
         /* symbol for "collapsed" panels */
-        content: "\f150";
+        content: "\f0fe";
         color: $dusty-gray;
     }
 
