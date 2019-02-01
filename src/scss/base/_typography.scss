@@ -3,16 +3,17 @@ h2 {
     font-size: 2rem;
     color: $tundora;
     font-weight: 400;
+    padding-bottom: .5rem;
 
     @include respond(lg) {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
     }
 }
 
 h3 {
     font-family: $font-sans;
     font-size: 1.6rem;
-    color: $dusty-gray;
+    color: $tundora;
     font-weight: 400;
     display: inline-block;
     margin-top: .5rem;
@@ -24,9 +25,10 @@ h3 {
 
 p {
     line-height: 1.6;
-    font-family: $font-sans;
-    color: $dusty-gray;
     font-size: 1.6rem;
+    font-family: $font-sans;
+    color: $tundora;
+
 
     @include respond(lg) {
         font-size: 1.8rem;
@@ -35,6 +37,7 @@ p {
 
 a {
     color: $tundora;
+
     &:hover {
         color: $dusty-gray;
         transition: all .3s linear;

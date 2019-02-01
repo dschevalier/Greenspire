@@ -1,3 +1,31 @@
+// OVERRIDES OF DEFAULT BOOTSTRAP CARD-DECK BEHAVIORS
+.card-deck {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    flex: 1 0 0%;
+
+    .card {
+        margin-bottom: $card-deck-margin;
+    }
+
+    @include media-breakpoint-up(md) {
+        flex-flow: row wrap;
+        margin-right: -$card-deck-margin;
+        margin-left: -$card-deck-margin;
+
+        .card {
+            display: flex;
+            flex: 1 0 0%;
+            flex-direction: column;
+            margin-right: $card-deck-margin;
+            margin-bottom: 0; // Override the default
+            margin-left: $card-deck-margin;
+        }
+    }
+}
+
+
 .hover-card {
     border: 1px solid $alto;
     background-color: $gin;
@@ -11,7 +39,7 @@
     }
 
     &:hover {
-        box-shadow: 0 1px 5px $alto, 0 1px 5px $alto;
+        box-shadow: 0 1px 15px $alto, 0 1px 15px $alto;
         transition: all .3s ease;
         cursor: pointer;
 
@@ -23,15 +51,10 @@
 
     img {
         margin-bottom: 2rem;
-        opacity: 0.7;
+        opacity: 1;
 
         @media (hover: none) {
             opacity: 1;
         }
     }
 }
-
-
-
-
-

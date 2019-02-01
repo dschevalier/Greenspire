@@ -1,3 +1,11 @@
+// REMOVES FOCUS :(
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
 @mixin button {
     font-family: $font-sans;
     letter-spacing: 1px;

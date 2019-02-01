@@ -1,39 +1,20 @@
-// REMOVES FOCUS :(
-.navbar-toggler:focus,
-.navbar-toggler:active {
-    outline: none !important;
-    box-shadow: none;
+// ------------------------------------
+// MISC. REUSABLE MIXINS
+// ------------------------------------
+@mixin small-side-margin {
+    margin: 0 1rem;
 }
 
-.btn:focus,
-.btn:active {
-    outline: none !important;
-    box-shadow: none;
+@mixin small-large-margin {
+    margin: 0 3rem;
 }
 
-// OVERRIDES OF DEFAULT BOOTSTRAP CARD-DECK BEHAVIORS
-.card-deck {
-    display: flex;
-    flex-direction: column;
-    padding: 0 3rem;
-    flex: 1 0 0%;
+// ------------------------------------
+// MISC. REUSABLE FUNCTIONS
+// ------------------------------------
 
-    .card {
-        margin-bottom: $card-deck-margin;
-    }
 
-    @include media-breakpoint-up(md) {
-        flex-flow: row wrap;
-        margin-right: -$card-deck-margin;
-        margin-left: -$card-deck-margin;
 
-        .card {
-            display: flex;
-            flex: 1 0 0%;
-            flex-direction: column;
-            margin-right: $card-deck-margin;
-            margin-bottom: 0; // Override the default
-            margin-left: $card-deck-margin;
-        }
-    }
-}
+// ------------------------------------
+// MISC. REUSABLE UTILITIES
+// ------------------------------------
