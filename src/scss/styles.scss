@@ -1,9 +1,13 @@
+// GOOGLE FONTS IMPORT
+@import 'https://fonts.googleapis.com/css?family=Nunito+Sans|PT+Serif:700';
+
 // VENDORS IMPORTS
 @import "vendors/fontawesome/brands.scss";
 @import "vendors/fontawesome/solid.scss";
 @import "vendors/fontawesome/regular.scss";
 @import "vendors/fontawesome/fontawesome.scss";
 @import "vendors/bootstrap/bootstrap.scss";
+@import "vendors/aos/aos.scss";
 
 // BASE IMPORTS
 @import "base/variables";
@@ -15,6 +19,7 @@
 // COMPONENT IMPORTS
 @import "components/buttons";
 @import "components/collapse-card";
+@import "components/forms";
 @import "components/hero";
 @import "components/hover-card";
 @import "components/navigation";

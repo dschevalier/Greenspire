@@ -11,7 +11,7 @@ header.hero {
     }
 
     @include respond(xl) {
-        padding: 10rem 0 7rem 3rem;
+        padding: 17rem 0 7rem 3rem;
         @include small-large-margin;
     }
 
@@ -27,7 +27,7 @@ header.hero {
         }
 
         @include respond(xl) {
-            padding-bottom: 12rem;
+            padding-bottom: 18rem;
         }
 
         .hero-heading {

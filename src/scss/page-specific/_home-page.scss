@@ -69,6 +69,15 @@
     }
 }
 
+#section-five {
+    padding: 4rem 0;
+
+    @include respond(xl) {
+        padding: 7rem 0;
+
+    }
+}
+
 footer {
     padding: 2rem 0 3rem 0;
     text-align: center;

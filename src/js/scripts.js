@@ -1,3 +1,5 @@
+AOS.init();
+
 // BUTTON POPUP TEXT
 $(function () {
     $('[data-toggle="popover"]').popover()
